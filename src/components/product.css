@@ -1,0 +1,107 @@
+.label-style {
+    font-size: 13px;
+    text-transform: uppercase;
+     margin-bottom: 5px;
+     display: block;
+}
+.select-style{
+    border: 1px solid var(--theme-orange)!important;-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-position: right center;
+    background-image: url(//cdn.shopify.com/s/files/1/0569/2378/3325/t/7/assets/ico-select.svg?v=354012039368648229);
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-color: transparent;
+    padding-right: 28px;
+    width: 50%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.atoc{
+    margin-left: 1em;
+    padding: 13px 16px !important;
+}
+
+.quantity{
+
+    border: 1px solid var(--theme-orange)!important;-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+   
+    background-color: transparent;
+    padding-right: 28px;
+    width: 20%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+
+.container-product {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+.cart-btn {
+    background-color: var(--theme-orange) !important;
+    border: 1px solid var(--theme-orange) !important;
+    color: #fff;
+    font-size: 12px;
+    padding: 8px 16px;
+    text-transform: uppercase;
+}
+.single-product-info .product-info .product-name {
+    font-size: 25px;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+.single-product-info .product-price .product-variant-price {
+    color: var(--theme-orange);
+  font-size: 20px; 
+  margin: 0 0 10px;
+}
+
+.single-product-info .product-info .product-name:after {
+    content: "";
+    position: absolute;
+    background: #ddd none repeat scroll 0 0;
+    width: 80px;
+    height: 1px;
+    left: 0;
+    bottom: 0;
+}
+
+.product-view .product-info {
+    text-align: left;
+    margin: 0;
+} 
+
+ .product-short-desc {
+   
+    line-height: 22px;
+    margin: 25px 0 0;    
+    font-size: 14px;
+}
+
+
+    @media (min-width: 768px) {
+    .container-product {
+        width: 750px;}
+    }
+
+    @media (min-width: 992px) {
+        .container-product {
+            width: 970px;}
+        }
+
+     @media (min-width: 1200px) {
+            .container-product {
+                width: 1170px;}
+            }
+    
+    
