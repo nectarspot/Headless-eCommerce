@@ -61,7 +61,7 @@ export const FeaturedProducts = () => {
                         </div>
                         <div className="product-info gallery-info">
                             <h6 className="product-name"><Link to="/">Metalon PX</Link></h6>
-                            <p className="product-price">$15.95</p>
+                            <p className="product-price">$14.95</p>
                         </div>
                     </div>
                     </Col>
