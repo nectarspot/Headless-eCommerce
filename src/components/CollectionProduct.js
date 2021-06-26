@@ -89,9 +89,9 @@ export default (props) => {
 					return (
 						<Col md={4}>
                       <div className="inner-category">
-						<div className="product-img" key={product.id + i}>
+						<div className="product-img pointer" key={product.id + i}>
 							{image ? (
-								<img src={image.src} onClick={(e) => handleClick(e, product.handle)} className="pointer" alt={`${product.title} product shot`} />
+								<img src={image.src} onClick={(e) => handleClick(e, product.handle)}  alt={`${product.title} product shot`} />
 							) : null}
 							</div>
 							
