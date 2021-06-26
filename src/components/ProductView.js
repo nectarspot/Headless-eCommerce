@@ -53,6 +53,7 @@ export default (props) => {
 								<img
 									key={image.id + i}
 									src={image.src}
+									onClick={(e) => handleClick(e, product.handle)}
 									alt={`${product.title} product shot`}
 								/>
 							)
