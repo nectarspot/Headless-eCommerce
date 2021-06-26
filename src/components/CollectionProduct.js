@@ -39,7 +39,7 @@ export default (props) => {
 		<div >
         <h1 className="section-title ">PRODUCTS</h1>
         </div>
-		<Row className="flex-reverse">
+		<Row className="flex-reverse" >
               <Col lg={3}  >
 			  <div className="sidebar-widget-area">
         
@@ -48,8 +48,8 @@ export default (props) => {
                       <h6 className="widget-title">Categories</h6>
                       
                       
-                      <div className="menu-list cl_list">
-                        <ul>
+                      <div className="menu-list cl_list" >
+                        <ul >
 						{
 							collections.map(collection =>(
 							<li className="" key={collection.id}><Link to={`/collection/${collection.id}`}>{collection.title} </Link></li>                                       

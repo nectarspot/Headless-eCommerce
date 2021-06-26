@@ -18,7 +18,7 @@ export const Triton = () => {
                     </Col>
                     <Col md={12} lg={6}>
                         <p className="desc">TRITON teak sealer features a nano-technology based coating that is designed for application on teak and other wood surfaces. Triton binds to the wood fibers and creates a highly water and dirt repellent protectant on the surface. TRITON marine teak protectant does not change the appearance, color or feel of the surface being treated. With regular maintenance and cleaning, TRITON can preserve your teak or wood surface for up to 6 months.</p>
-                        <Link to="/" className="read-more tab-center">Shop</Link>
+                        <Link to="/product/triton" className="read-more tab-center">Shop</Link>
                     </Col>
                 </Row>
             </Container>

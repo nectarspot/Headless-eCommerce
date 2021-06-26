@@ -99,36 +99,36 @@ export const Menu = () => {
                       <Col md={12} lg={3} className="grand-child">
                       <NavDropdown title="Complete Teak Care" id="collasible-nav-dropdown">
                       
-                        <NavDropdown.Item href="/">BioClear</NavDropdown.Item>
-                        <NavDropdown.Item href="/">Teak Clean</NavDropdown.Item>
-                        <NavDropdown.Item href="/">Triton</NavDropdown.Item>
+                        <NavDropdown.Item href="/product/bioclear">BioClear</NavDropdown.Item>
+                        <NavDropdown.Item href="/product/teak-clean">Teak Clean</NavDropdown.Item>
+                        <NavDropdown.Item href="/product/triton">Triton</NavDropdown.Item>
                       
                       </NavDropdown>
                       </Col>
                       <Col md={12} lg={3}>
                       <NavDropdown title="Exterior Care" id="collasible-nav-dropdown">
                       
-                        <NavDropdown.Item href="/">APC (All Purpose Cleaner)</NavDropdown.Item>
-                        <NavDropdown.Item href="/">Black Streak/Non-Skid</NavDropdown.Item>
-                        <NavDropdown.Item href="/">Boat Soap</NavDropdown.Item>
-                        <NavDropdown.Item href="/">Degreaser</NavDropdown.Item>
-                        <NavDropdown.Item href="/">Hull and Bottom Cleaner</NavDropdown.Item>
+                        <NavDropdown.Item href="/product/apc-all-purpose-cleaner">APC (All Purpose Cleaner)</NavDropdown.Item>
+                        <NavDropdown.Item href="/product/black-streak-non-skid">Black Streak/Non-Skid</NavDropdown.Item>
+                        <NavDropdown.Item href="/product/boat-soap">Boat Soap</NavDropdown.Item>
+                        <NavDropdown.Item href="/product/degreaser">Degreaser</NavDropdown.Item>
+                        <NavDropdown.Item href="/product/hull-and-bottom-cleaner">Hull and Bottom Cleaner</NavDropdown.Item>
                       
                       </NavDropdown>
                       </Col>
                       <Col md={12} lg={3}>
                       <NavDropdown title="Metal Protection" id="collasible-nav-dropdown">
                       
-                        <NavDropdown.Item href="/">Metalon PX</NavDropdown.Item>
+                        <NavDropdown.Item href="/product/metalon-px">Metalon PX</NavDropdown.Item>
                       
                       </NavDropdown>
                       </Col>
                       <Col md={12} lg={3}>
                       <NavDropdown title="Glass Preservation" id="collasible-nav-dropdown">
                       
-                        <NavDropdown.Item href="/">Crystal Clear</NavDropdown.Item>
-                        <NavDropdown.Item href="/">G200</NavDropdown.Item>
-                        <NavDropdown.Item href="/">Glasstec</NavDropdown.Item>
+                        <NavDropdown.Item href="/product/crystal-clear">Crystal Clear</NavDropdown.Item>
+                        <NavDropdown.Item href="/product/g200">G200</NavDropdown.Item>
+                        <NavDropdown.Item href="/product/glasstec">Glasstec</NavDropdown.Item>
                       
                       </NavDropdown>
                       </Col>

@@ -1,11 +1,20 @@
 import React from 'react'
+import { useShopify } from "../hooks"
 import { Container , Row , Col , Image, Form, Button } from 'react-bootstrap'
 import { FiMapPin, FiPhoneCall, FiMail } from "react-icons/fi"
 import { FaTelegramPlane } from "react-icons/fa"
 import { Link } from "react-router-dom";
 import '../components/all.css';
 
-export const Footer = () => {
+export default (props) => {
+	const {
+		products,
+		collection,
+		collections , 
+		fetchCollections,
+		fetchProduct ,
+	} = useShopify()
+
     return (
         <div className="footer">
             <Container>
@@ -35,20 +44,17 @@ export const Footer = () => {
                     <div className="services-list">
                         <h6 className="widget-title">Marine Products</h6>
                         <div className="service-list">
-                            <ul>
+                        {collections &&
+                            collections.map((collection, i) => {
+                                
+                                return(
+                            <ul key={collection.id}>
                                 <li className="d-flex">
-                                    <Link to="/">Complete Teak Care</Link>
+                                    <Link to={`/collection/${collection.id}`}>{collection.title}</Link>
                                  </li>
-                                <li className="d-flex">
-                                    <Link to="/">Exterior Care</Link>
-                                </li>
-                                <li className="d-flex">
-                                    <Link to="/">Metal Protection</Link>
-                                </li>
-                                <li className="d-flex">
-                                    <Link to="/">Glass Preservation</Link>
-                                </li>
+                                
                              </ul>
+                             )})}
                              </div>
                         </div>
                     </Col>
