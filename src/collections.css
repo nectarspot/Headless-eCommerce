@@ -39,6 +39,10 @@
     
 }
 
+.collections-page .section-title{
+    margin: 1.5em 0!important;
+}
+
 .single-sidebar-widget .menu-list ul li {
     padding: 5px 0;    margin-bottom: 0;
 }
