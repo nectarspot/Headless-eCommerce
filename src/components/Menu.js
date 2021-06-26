@@ -54,33 +54,33 @@ export const Menu = () => {
                       <Col md={12} lg={3} className="grand-child">
                       <h6 className="grand-list"><Link to="/">Complete Teak Care</Link></h6>
                       <ul className="grand-children">
-                        <li><Link to="/">BioClear</Link></li>
-                        <li><Link to="/">Teak Clean</Link></li>
-                        <li><Link to="/">Triton</Link></li>
+                        <li><Link to="/product/bioclear">BioClear</Link></li>
+                        <li><Link to="/product/teak-clean">Teak Clean</Link></li>
+                        <li><Link to="/product/triton">Triton</Link></li>
                       </ul>
                       </Col>
                       <Col md={12} lg={3}>
                       <h6 className="grand-list"><Link to="/">Exterior Care</Link></h6>
                       <ul className="grand-children">
-                        <li><Link to="/">APC (All Purpose Cleaner)</Link></li>
-                        <li><Link to="/">Black Streak/Non-Skid</Link></li>
-                        <li><Link to="/">Boat Soap</Link></li>
-                        <li><Link to="/">Degreaser</Link></li>
-                        <li><Link to="/">Hull and Bottom Cleaner</Link></li>
+                        <li><Link to="/product/apc-all-purpose-cleaner">APC (All Purpose Cleaner)</Link></li>
+                        <li><Link to="/product/black-streak-non-skid">Black Streak/Non-Skid</Link></li>
+                        <li><Link to="/product/boat-soap">Boat Soap</Link></li>
+                        <li><Link to="/product/degreaser">Degreaser</Link></li>
+                        <li><Link to="/product/hull-and-bottom-cleaner">Hull and Bottom Cleaner</Link></li>
                       </ul>
                       </Col>
                       <Col md={12} lg={3}>
                       <h6 className="grand-list"><Link to="/">Metal Protection</Link></h6>
                       <ul className="grand-children">
-                        <li><Link to="/">Metalon PX</Link></li>
+                        <li><Link to="/product/metalon-px">Metalon PX</Link></li>
                       </ul>
                       </Col>
                       <Col md={12} lg={3}>
                       <h6 className="grand-list"><Link to="/">Glass Preservation</Link></h6>
                       <ul className="grand-children">
-                        <li><Link to="/">Crystal Clear</Link></li>
-                        <li><Link to="/">G200</Link></li>
-                        <li><Link to="/">Glasstec</Link></li>
+                        <li><Link to="/product/crystal-clear">Crystal Clear</Link></li>
+                        <li><Link to="/product/g200">G200</Link></li>
+                        <li><Link to="/product/glasstec">Glasstec</Link></li>
                       </ul>
                       </Col>
                     </Row>
