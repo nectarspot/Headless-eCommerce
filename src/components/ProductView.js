@@ -16,6 +16,7 @@ export default (props) => {
 	const defaultSize = product.variants && product.variants[0].id.toString()
 	const [size, setSize] = useState("")
 	const [quantity, setQuantity] = useState(1)
+
    
 
 
@@ -37,6 +38,7 @@ export default (props) => {
 		}
 	}
 
+	
 
 	useEffect(() => {
 		fetchProduct(handle)
@@ -71,6 +73,7 @@ export default (props) => {
 				<div className="product-price">
 				
 				<h2 className="product-variant-price">${product.variants && product.variants[0].price}</h2>
+		
 				</div>
 
 					<div>
@@ -88,10 +91,10 @@ export default (props) => {
 								product.variants.map((item, i) => {
 									return (
 										<option
-										    
+									
 											value={item.id.toString()}
 											key={item.title + i}
-										>{`${item.title}`}</option>
+										>{`${item.title}`}  -   {`$${item.price}`}</option>
 									)
 								})}
 								
