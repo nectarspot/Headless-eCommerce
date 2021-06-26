@@ -16,7 +16,7 @@ export default (props) => {
 	const defaultSize = product.variants && product.variants[0].id.toString()
 	const [size, setSize] = useState("")
 	const [quantity, setQuantity] = useState(1)
-
+   
 
 
 	function changeSize(sizeId, quantity) {
@@ -37,9 +37,12 @@ export default (props) => {
 		}
 	}
 
+
 	useEffect(() => {
 		fetchProduct(handle)
 	}, [handle])
+
+
 
 	return (
 		<div id="individualProduct" className="ptb-30 product-view">
@@ -66,6 +69,7 @@ export default (props) => {
 					<h2 className="product-name">{product.title}</h2>
 				</div>
 				<div className="product-price">
+				
 				<h2 className="product-variant-price">${product.variants && product.variants[0].price}</h2>
 				</div>
 
@@ -74,6 +78,7 @@ export default (props) => {
 						<select
 						    className="select-style"
 							id="prodOptions"
+						
 							name={size}
 							onChange={(e) => {
 								setSize(e.target.value)
@@ -83,11 +88,13 @@ export default (props) => {
 								product.variants.map((item, i) => {
 									return (
 										<option
+										    
 											value={item.id.toString()}
 											key={item.title + i}
 										>{`${item.title}`}</option>
 									)
 								})}
+								
 						</select>
 					</div>
 					<div>
