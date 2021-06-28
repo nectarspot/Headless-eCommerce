@@ -395,7 +395,7 @@ background-color: var(--theme-orange);
     color: var(--theme-orange);
     font-size: 30px;
     font-weight: 700;
-    margin: 0 0 7px;
+    margin: 0 0 7px!important;
     text-align: center;
 }
 

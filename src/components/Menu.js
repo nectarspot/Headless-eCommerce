@@ -93,7 +93,7 @@ export const Menu = () => {
                 </Nav>
 
                 <Nav className=" nav-link-menu tab-block">
-                  <div className="mega-menu">
+                  
                   <NavDropdown title="Marine Products" id="collasible-nav-dropdown">
                     <Row>
                       <Col md={12} lg={3} className="grand-child">
@@ -138,7 +138,7 @@ export const Menu = () => {
                     
                     
                   </NavDropdown>
-                  </div>
+                  
                 </Nav>
                 
                 <Nav className=" nav-link-menu ">
