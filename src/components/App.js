@@ -35,16 +35,16 @@ export default (props) => {
 			<div id="App">
 												
 				<HeaderPage />
+				<Suspense fallback={<div>Loading...</div>}>
 				<Switch>
 				<Route  path="/product/:handle"  component={ProductView} />
 				<Route  path="/collection/:collectionId" component={CollectionProduct} />
 				<Route  path="/collections/all/" component={Products} />
 				<Route path="/">
-				<Suspense fallback={<div>Loading...</div>}>
 				<Home />
-				</Suspense>
 			    </Route>
 				</Switch>	
+				</Suspense>
 				<FooterPage />
 				
 			</div>
