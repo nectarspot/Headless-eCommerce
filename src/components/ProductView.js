@@ -16,8 +16,8 @@ export default (props) => {
 	const defaultSize = product.variants && product.variants[0].id.toString()
 	const [size, setSize] = useState("")
 	const [quantity, setQuantity] = useState(1)
-
-   
+	const description = product.description && product.description.replaceAll(/short_description|application_description|environment_description|product_description|[*+?^${}()|[\]\\/]/gi, "")
+	
 
 
 	function changeSize(sizeId, quantity) {
@@ -38,12 +38,13 @@ export default (props) => {
 		}
 	}
 
-	
+
 
 	useEffect(() => {
 		fetchProduct(handle)
 	}, [handle])
 
+	
 
 
 	return (
@@ -73,7 +74,7 @@ export default (props) => {
 				<div className="product-price">
 				
 				<h2 className="product-variant-price">${product.variants && product.variants[0].price}</h2>
-		
+			
 				</div>
 
 					<div>
@@ -91,10 +92,10 @@ export default (props) => {
 								product.variants.map((item, i) => {
 									return (
 										<option
-									
+										
 											value={item.id.toString()}
 											key={item.title + i}
-										>{`${item.title}`}  -   {`$${item.price}`}</option>
+										>{`${item.title}`}</option>
 									)
 								})}
 								
@@ -119,7 +120,7 @@ export default (props) => {
 					</button>
 					</div>
 					<p className="product-short-desc">
-					{product.description}
+					{description}
 				    </p>
 					
 				</div>
