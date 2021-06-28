@@ -15,7 +15,8 @@ export const Menu = () => {
             
             <Row className="align-items-center desc-block">
             <Col>
-            <Link to="/"><Image className="img" src="https://cdn.shopify.com/s/files/1/0569/2378/3325/files/logo-black_medium.png?v=1621852363" /></Link>
+            <Link to="/"><Image className="img" width="240" height="104"
+            src="https://cdn.shopify.com/s/files/1/0569/2378/3325/files/logo-black_medium.png?v=1621852363" /></Link>
             </Col>
             <Col xs={6}>
             <Form>

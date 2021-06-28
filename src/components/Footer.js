@@ -21,7 +21,8 @@ export default (props) => {
                 <Row>
                     <Col sm={12} md={4}>
                         <Link to="/">
-                            <Image src="https://cdn.shopify.com/s/files/1/0569/2378/3325/files/logo-black_medium.png?v=1621852363" alt="Logo" />
+                            <Image width="240" height="104"
+                            src="https://cdn.shopify.com/s/files/1/0569/2378/3325/files/logo-black_medium.png?v=1621852363" alt="Logo" />
                         </Link>
                         <div className="address">
                             <ul>

@@ -10,8 +10,9 @@ export const Banner = () => {
         <div className="mb-100">
             <Container>
                 <div className="banner-section">
-                    <LazyLoadImage 
-                    effect="blur"
+                    <Image 
+                    width="1220"
+                    height="515"
                     className="d-block w-100" 
                     src="https://cdn.shopify.com/s/files/1/0569/2378/3325/files/ditec-banner1_1920x810.png" 
                     alt="First slide" 
