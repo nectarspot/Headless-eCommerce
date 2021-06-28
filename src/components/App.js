@@ -1,12 +1,13 @@
-import React, { useEffect ,Suspense , lazy} from "react"
+import React, { useEffect ,Suspense ,lazy} from "react"
 import { BrowserRouter as Router, Route,  Switch } from "react-router-dom"
+import Products from "./Products"
+import { Home } from "./Home"
+import ProductView from "./ProductView"
 import { useShopify } from "../hooks"
-const ProductView = lazy(() => import('./ProductView'))
-const CollectionProduct = lazy(() => import('./CollectionProduct'))
-const HeaderPage = lazy(() => import('./HeaderPage'))
-const FooterPage = lazy(() => import('./FooterPage'))
-const Home = lazy(() => import('./Home'))
-const Products = lazy(() => import('./Products'))
+
+import { HeaderPage } from "./HeaderPage"
+import { FooterPage } from "./FooterPage"
+import CollectionProduct from "./CollectionProduct"
 
 export default (props) => {
 	const {
@@ -26,10 +27,9 @@ export default (props) => {
 	}, [])
 
 	return (
-		<Suspense fallback={<div>Loading..</div>}>
+		<Router>
 			<div id="App">
-			<Router>
-										
+												
 				<HeaderPage />
 				<Switch>
 				<Route  path="/product/:handle"  component={ProductView} />
@@ -39,10 +39,9 @@ export default (props) => {
 				<Home />
 			    </Route>
 				</Switch>	
-				
 				<FooterPage />
-			</Router>
+				
 			</div>
-			</Suspense>
+		</Router>
 	)
 }
