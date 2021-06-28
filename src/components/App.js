@@ -8,6 +8,7 @@ import { useShopify } from "../hooks"
 import { HeaderPage } from "./HeaderPage"
 import { FooterPage } from "./FooterPage"
 import CollectionProduct from "./CollectionProduct"
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 export default (props) => {
 	const {

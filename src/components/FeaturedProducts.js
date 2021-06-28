@@ -2,6 +2,7 @@ import React from 'react'
 import { Container , Row , Col , Image } from 'react-bootstrap'
 import { Link } from "react-router-dom";
 import '../components/all.css';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export const FeaturedProducts = () => {
     return (
@@ -15,7 +16,10 @@ export const FeaturedProducts = () => {
                     <div className="inner-category">
                         <div className="hover-effect product-img">
                             <Link to="/product/triton">
-                                <Image className="img" src="https://cdn.shopify.com/s/files/1/0569/2378/3325/files/trition-500x470.png" />
+                                <LazyLoadImage 
+                                className="img"
+                                effect="blur"
+                                 src="https://cdn.shopify.com/s/files/1/0569/2378/3325/files/trition-500x470.png" />
                             </Link>
                         
                             <Link to="/product/triton" className="overlay-shop-btn">
@@ -33,7 +37,10 @@ export const FeaturedProducts = () => {
                         <div className="inner-category">
                         <div className="hover-effect product-img">
                             <Link to="/product/boat-soap">
-                                <Image className="img" src="https://cdn.shopify.com/s/files/1/0569/2378/3325/files/boat-soap-500x470.png" />
+                                <LazyLoadImage 
+                                className="img" 
+                                effect="blur"
+                                src="https://cdn.shopify.com/s/files/1/0569/2378/3325/files/boat-soap-500x470.png" />
                             </Link>
                     
                             <Link to="/product/boat-soap" className="overlay-shop-btn">
@@ -51,7 +58,10 @@ export const FeaturedProducts = () => {
                         <div className="inner-category">
                         <div className="hover-effect product-img">
                             <Link to="/product/metalon-px">
-                                <Image className="img" src="https://cdn.shopify.com/s/files/1/0569/2378/3325/files/metalon_500x470_89d141b4-3397-4c35-ba21-a44f75fb9d3e.png?v=1624010530" />
+                                <LazyLoadImage 
+                                effect="blur"
+                                className="img" 
+                                src="https://cdn.shopify.com/s/files/1/0569/2378/3325/files/metalon_500x470_89d141b4-3397-4c35-ba21-a44f75fb9d3e.png?v=1624010530" />
                             </Link>
         
                             <Link to="/product/metalon-px" className="overlay-shop-btn">
@@ -69,7 +79,10 @@ export const FeaturedProducts = () => {
                         <div className="inner-category">
                         <div className="hover-effect product-img">
                             <Link to="/product/glasstec">
-                                <Image className="img" src="https://cdn.shopify.com/s/files/1/0569/2378/3325/files/glasstec-500x470.png?v=1624010574" />
+                                <LazyLoadImage 
+                                effect="blur"
+                                className="img" 
+                                src="https://cdn.shopify.com/s/files/1/0569/2378/3325/files/glasstec-500x470.png?v=1624010574" />
                             </Link>
 
                             <Link to="/product/glasstec" className="overlay-shop-btn">

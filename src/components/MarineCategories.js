@@ -4,6 +4,7 @@ import { Container , Row , Col , Image } from 'react-bootstrap'
 import { AiOutlineShopping } from "react-icons/ai"
 import { Link } from "react-router-dom";
 import '../components/all.css';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export default (props) => {
 	const {
@@ -33,7 +34,7 @@ export default (props) => {
                     <div className="inner-category">
                         <div className="hover-effect product-img">
                             <Link to={`/collection/${collection.id}`}>
-                                <Image className="img" src={image.src} />
+                                <LazyLoadImage className="img" src={image.src} effect="blur" alt={image.id} />
                             </Link>
                             <Link to={`/collection/${collection.id}`} className="shopping-bag">
                              <i><AiOutlineShopping /></i>

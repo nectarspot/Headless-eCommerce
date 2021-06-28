@@ -2,6 +2,7 @@ import React from 'react'
 import { Container , Row , Col , Image } from 'react-bootstrap'
 import { Link } from "react-router-dom";
 import '../components/all.css';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export const TeakClean = () => {
     return (
@@ -13,7 +14,11 @@ export const TeakClean = () => {
             </div>
                 <Row className="align-items-center">
                     <Col md={12} lg={6}>
-                        <Image className="img box-shadow img-mb-2" src="https://cdn.shopify.com/s/files/1/0569/2378/3325/files/teak-clean-524x333.png?v=1623052056" alt="Teak Clean Product" />
+                        <LazyLoadImage 
+                        effect="blur"
+                        className="img box-shadow img-mb-2" 
+                        src="https://cdn.shopify.com/s/files/1/0569/2378/3325/files/teak-clean-524x333.png?v=1623052056" 
+                        alt="Teak Clean Product" />
                     </Col>
                     <Col lg={{ order: 'first' }} md={{ order: 'last' }} md={12} lg={6}>
                         <p className="desc">TEAK CLEAN is specially engineered for cleaning teak and other wood surfaces. It safely cleans and restores teak decks to their natural color and eliminates the need for 2-part cleaning.</p>

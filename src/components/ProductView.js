@@ -4,6 +4,7 @@ import { useShopify } from "../hooks"
 import { Button , Container , Row , Col} from 'react-bootstrap';
 import '../components/product.css'
 
+
 export default (props) => {
 	const {
 		product,

@@ -6,6 +6,7 @@ import { AiOutlineUserAdd } from "react-icons/ai";
 import Cart from "./Cart";
 import '../components/all.css';
 
+
 export const Menu = () => {
    return (
         <div className="header mb-4">

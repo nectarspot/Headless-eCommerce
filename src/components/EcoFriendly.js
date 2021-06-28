@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container , Row , Col , Image } from 'react-bootstrap'
 import '../components/all.css';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export const EcoFriendly = () => {
     return (
@@ -16,7 +17,11 @@ export const EcoFriendly = () => {
                         <p className="desc">These components are known to be dangerous to our health and ecosystem, and they fail to deliver performance and efficiency in cleaning products. By keeping out the bad stuff, we help ensure that our products meet the highest expectations for what boat cleaning products can be – including yours.</p>
                     </Col>
                     <Col md={12} lg={6}>
-                        <Image className="img img-mb-2" src="https://cdn.shopify.com/s/files/1/0569/2378/3325/files/section4-img-524x333.png?v=1623052238" alt="Boat Cleaning Products" />
+                        <LazyLoadImage 
+                        effect="blur"
+                        className="img img-mb-2" 
+                        src="https://cdn.shopify.com/s/files/1/0569/2378/3325/files/section4-img-524x333.png?v=1623052238" 
+                        alt="Boat Cleaning Products" />
                     </Col>
                     
                 </Row>
