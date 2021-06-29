@@ -15,7 +15,7 @@ export default (props) => {
 	} = useShopify()
 	const handle = props.match.params.handle
 	const defaultSize = product.variants && product.variants[0].id.toString()
-	const [size, setSize] = useState(defaultSize)
+	const [size, setSize] = useState("")
 	const [quantity, setQuantity] = useState(1)
 	const description = product.description && product.description.replaceAll(/short_description|application_description|environment_description|product_description|[*+?^${}()|[\]\\/]/gi, "")
 	const defaultPrice = product.variants && product.variants[0].price
@@ -31,7 +31,8 @@ export default (props) => {
 			]
 			const checkoutId = checkoutState.id
 			addVariant(checkoutId, lineItemsToAdd)
-		} else {
+		} else  {
+			
 			const lineItemsToAdd = [
 				{ variantId: sizeId, quantity: parseInt(quantity, 10) },
 			]
@@ -73,7 +74,7 @@ export default (props) => {
 					<h2 className="product-name">{product.title}</h2>
 				</div>
 				<div className="product-price">
-				
+			
 				<div>
                  
 				{product.variants &&
@@ -83,12 +84,20 @@ export default (props) => {
 						return (
 							<h2 className="product-variant-price" >{`$${item.price}`}</h2>
 						) 
+					} else if ( size < 1 && i !== 1){
+						return(
+							<h2 className="product-variant-price" >{`$${defaultPrice}`}</h2>
+						)
 					}
+
 				}
 					)} 
 
-				</div>		
-			   
+				</div>	
+				
+					
+					
+			
 				</div>
 				{product.variants &&
 					product.variants.map((item, i) => {
