@@ -15,10 +15,11 @@ export default (props) => {
 	} = useShopify()
 	const handle = props.match.params.handle
 	const defaultSize = product.variants && product.variants[0].id.toString()
-	const [size, setSize] = useState("")
+	const [size, setSize] = useState(defaultSize)
 	const [quantity, setQuantity] = useState(1)
 	const description = product.description && product.description.replaceAll(/short_description|application_description|environment_description|product_description|[*+?^${}()|[\]\\/]/gi, "")
-	
+	const defaultPrice = product.variants && product.variants[0].price
+
 
 
 	function changeSize(sizeId, quantity) {
@@ -45,7 +46,6 @@ export default (props) => {
 		fetchProduct(handle)
 	}, [handle])
 
-	
 
 
 	return (
@@ -74,11 +74,29 @@ export default (props) => {
 				</div>
 				<div className="product-price">
 				
-				<h2 className="product-variant-price">${product.variants && product.variants[0].price}</h2>
-			
-				</div>
+				<div>
+                 
+				{product.variants &&
+					product.variants.map((item, i) => {
+						if (item.id === size && i >= 0) {
+						
+						return (
+							<h2 className="product-variant-price" >{`$${item.price}`}</h2>
+						) 
+					}
+				}
+					)} 
 
-					<div>
+				</div>		
+			   
+				</div>
+				{product.variants &&
+					product.variants.map((item, i) => {
+						if ( i === 1 ) {
+						
+							return (
+					<div >
+				
 						<label className="label-style" htmlFor={"prodOptions"}>Size</label>
 						<select
 						    className="select-style"
@@ -89,11 +107,12 @@ export default (props) => {
 								setSize(e.target.value)
 							}}
 						>
+						
 							{product.variants &&
 								product.variants.map((item, i) => {
 									return (
 										<option
-										
+										   
 											value={item.id.toString()}
 											key={item.title + i}
 										>{`${item.title}`}</option>
@@ -101,7 +120,12 @@ export default (props) => {
 								})}
 								
 						</select>
-					</div>
+				
+					</div> )
+					} 
+				})}
+
+
 					<div>
 						<label className="label-style">Quantity</label>
 						<input
