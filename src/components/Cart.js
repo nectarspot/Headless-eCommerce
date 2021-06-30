@@ -1,7 +1,7 @@
 import React, { useEffect } from "react"
 import LineItem from "./LineItem"
 import { useShopify } from "../hooks"
-import { MdShoppingCart, MdRemoveShoppingCart } from "react-icons/md"
+import { MdShoppingCart,MdHighlightOff } from "react-icons/md"
 
 export default (props) => {
 	const {
@@ -30,10 +30,13 @@ export default (props) => {
 
 	useEffect(() => {
 		const button = document.querySelector("button.App__view-cart")
+		const body = document.querySelector("body")
 		if (cartStatus === true) {
 			button.classList.add("hide")
+			body.classList.add("overflow-hidden")
 		} else {
 			button.classList.remove("hide")
+			body.classList.remove("overflow-hidden");
 		}
 
 		function getCount() {
@@ -63,9 +66,9 @@ export default (props) => {
 			<div className={`Cart ${cartStatus ? "Cart--open" : ""}`}>
 				
 				<header className="Cart__header">
-					<h2 className="section-title text-left">Your cart</h2>
+					<h2 className=" Cart-info__small text-left">Your Shopping Cart</h2>
 					<button className="Cart__close" onClick={(e) => handleClose(e)}>
-						<MdRemoveShoppingCart />
+						<MdHighlightOff />
 					</button>
 				</header>
 				<ul className="Cart__line-items">
