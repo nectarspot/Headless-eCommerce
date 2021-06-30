@@ -10,6 +10,8 @@ import { FooterPage } from "./FooterPage"
 import CollectionProduct from "./CollectionProduct"
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
+
+
 export default (props) => {
 	const {
 		createShop,
@@ -39,7 +41,8 @@ export default (props) => {
 				<Route path="/">
 				<Home />
 			    </Route>
-				</Switch>	
+				</Switch>
+		
 				<FooterPage />
 				
 			</div>

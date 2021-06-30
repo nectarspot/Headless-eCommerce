@@ -1,7 +1,8 @@
 import React, { useEffect } from "react"
 import LineItem from "./LineItem"
 import { useShopify } from "../hooks"
-import { MdShoppingCart,MdHighlightOff } from "react-icons/md"
+import { MdShoppingCart } from "react-icons/md"
+import { GrFormClose } from "react-icons/gr"
 
 export default (props) => {
 	const {
@@ -66,9 +67,9 @@ export default (props) => {
 			<div className={`Cart ${cartStatus ? "Cart--open" : ""}`}>
 				
 				<header className="Cart__header">
-					<h2 className=" Cart-info__small text-left">Your Shopping Cart</h2>
+					<h2 className=" Cart-info__small text-left mb-0">Your Shopping Cart</h2>
 					<button className="Cart__close" onClick={(e) => handleClose(e)}>
-						<MdHighlightOff />
+					<GrFormClose />
 					</button>
 				</header>
 				<ul className="Cart__line-items">

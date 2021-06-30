@@ -19,7 +19,7 @@ export default (props) => {
 	const [quantity, setQuantity] = useState(1)
 	const description = product.description && product.description.replaceAll(/short_description|application_description|environment_description|product_description|[*+?^${}()|[\]\\/]/gi, "")
 	const defaultPrice = product.variants && product.variants[0].price
-
+	
 
 
 	function changeSize(sizeId, quantity) {
@@ -40,6 +40,16 @@ export default (props) => {
 			addVariant(checkoutId, lineItemsToAdd)
 		}
 	}
+
+	function increment() {
+		setQuantity(prevCount => prevCount + 1)
+	}
+	
+	function decrement() {
+		setQuantity(prevCount => prevCount - 1)
+	}
+
+
 
 
 
@@ -137,15 +147,19 @@ export default (props) => {
 
 					<div>
 						<label className="label-style">Quantity</label>
+						<button className="quantity-update" onClick={decrement} disabled={quantity <= 1}>-</button>
+						
 						<input
 							className="quantity"
 							type="number"
+							
 							min={1}
 							value={quantity}
 							onChange={(e) => {
 								setQuantity(e.target.value)
 							}}
 						></input>
+						<button className="quantity-update" onClick={increment}>+</button>
 						<button
 						className="read-more atoc"
 						onClick={(e) => changeSize(size, quantity)}
