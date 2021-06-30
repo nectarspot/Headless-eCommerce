@@ -143,7 +143,7 @@ img {
 /* CART
   * ============================== */
 .Cart {
-	z-index: 100;
+	z-index: 10000;
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -500,6 +500,17 @@ img {
 
 .Cart--open .App__view-cart.hide {
 	display: none
+}
+
+.cart-overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
 }
 
 

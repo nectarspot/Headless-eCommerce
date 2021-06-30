@@ -27,7 +27,7 @@ export const TeakClean = () => {
                             <li>2. 4 to 10 times more effective than citric and glycolic acid</li>
                             <li>3. Safe for gelcoat and paint</li>
                         </ul>
-                        <Link to="/product/teak-clean" className="read-more tab-center">Shop</Link>
+                        <Link to="/product/teak-clean" className="read-more tab-center">Shop Now</Link>
                     </Col>
                 </Row>
             </Container>

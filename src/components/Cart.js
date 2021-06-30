@@ -98,6 +98,7 @@ export default (props) => {
 					</button>
 				</footer>
 			</div>
+			<div className={`${cartStatus ? "cart-overlay" : ""}`} onClick={(e) => handleClose(e)}></div>
 		</div>
 	)
 }
