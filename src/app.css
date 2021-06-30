@@ -502,32 +502,15 @@ img {
 	display: none
 }
 
-/* @media (max-width: 1365px) {
-    .App__view-cart-wrapper2 {
-        left: -45px;
-    }
-}
 
-@media (max-width: 1050px) {
-	.App__view-cart-wrapper2 {
-		top: 75px;
-	}
-}
-
-@media (max-width: 768px) {
-	.App__view-cart-wrapper2 {
-		top: 70px;
-	}
-}
 
 @media (max-width: 575px) {
-	.App__view-cart-wrapper2 {
-		top: 100px;
+	.Line-item__price {
+		line-height: 29px;
+		float: none; 
+		margin-right: 0px; 
+		margin-left: 12px;
 	}
 }
 
-@media (max-width: 425px) {
-    .App__view-cart-wrapper2 {
-        top: 95px;
-    }
-} */
+

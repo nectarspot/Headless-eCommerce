@@ -7,6 +7,7 @@ import Cart from "./Cart";
 import '../components/all.css';
 
 
+
 export const Menu = () => {
    return (
         <div className="header mb-4">
@@ -181,7 +182,7 @@ export const Menu = () => {
                     <Link to=""><i className="svg-scale"><AiOutlineUserAdd /></i></Link>
                     </li>
                     <li>
-                    <Cart />
+                    <Cart/>
                     </li>                    
                 </ul>
             </Col>

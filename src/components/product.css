@@ -89,6 +89,8 @@
 }
 
 
+
+
     @media (min-width: 768px) {
     .container-product {
         width: 750px;}
@@ -105,3 +107,11 @@
             }
     
     
+            @media (max-width: 575px) {
+                .select-style{
+                    width: 100%;
+                }
+                .quantity{
+                    width:40%;
+                }
+                 }

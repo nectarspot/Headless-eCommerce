@@ -1,6 +1,6 @@
 import React from 'react'
 import { Menu } from './Menu'
-import { Offer } from './Offer'
+import  Offer  from './Offer'
 
 export const HeaderPage = () => {
     return (

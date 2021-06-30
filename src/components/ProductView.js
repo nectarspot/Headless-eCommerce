@@ -82,11 +82,11 @@ export default (props) => {
 						if (item.id === size && i >= 0) {
 						
 						return (
-							<h2 className="product-variant-price" >{`$${item.price}`}</h2>
+							<h2 key={item.id} className="product-variant-price" >{`$${item.price}`}</h2>
 						) 
 					} else if ( size < 1 && i !== 1){
 						return(
-							<h2 className="product-variant-price" >{`$${defaultPrice}`}</h2>
+							<h2 key={item.id} className="product-variant-price" >{`$${defaultPrice}`}</h2>
 						)
 					}
 
